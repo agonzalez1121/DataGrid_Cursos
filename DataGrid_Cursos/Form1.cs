@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace DataGrid_Cursos
 {
@@ -17,6 +18,9 @@ namespace DataGrid_Cursos
         {
             InitializeComponent();
             PopulateData();
+            BindData();
+            BindSupervisor();
+            
         }
         int Id = 0 ;
         SqlConnection con = new SqlConnection("Data Source=A;Initial Catalog=importarExcelORS;Integrated Security=True");
@@ -50,14 +54,14 @@ namespace DataGrid_Cursos
 
         private void button_Add_New_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrWhiteSpace(textBox_Area.Text) && !String.IsNullOrWhiteSpace(textBox_area_tematica.Text) && !String.IsNullOrWhiteSpace(textBox_JobCode.Text) && !String.IsNullOrWhiteSpace(textBox_Supervisor.Text))
+            if (!String.IsNullOrWhiteSpace(comboBox_Area.SelectedItem.ToString()) && !String.IsNullOrWhiteSpace(textBox_area_tematica.Text) && !String.IsNullOrWhiteSpace(textBox_JobCode.Text) && !String.IsNullOrWhiteSpace(comboBox_Supervisor.SelectedItem.ToString()))
             {
                 
                 SqlCommand cmd = new SqlCommand("insert into [dbo].[Capacitaciones_2022]([ZONER NAME], [AREA],[SUPERVISOR],[TRAINING NAME],[AREA TEMATICA] ,[JOBCODE]) values (@Zoner_name,@Area,@Supervisor,@Training_Name,@Area_Tematica,@JobCode) ", con);
                 con.Open();
                 cmd.Parameters.AddWithValue("@Zoner_name", textBox_ZonerName.Text);
-                cmd.Parameters.AddWithValue("@Area", textBox_Area.Text);
-                cmd.Parameters.AddWithValue("@Supervisor", textBox_Supervisor.Text);
+                cmd.Parameters.AddWithValue("@Area", comboBox_Area.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Supervisor", comboBox_Supervisor.SelectedItem.ToString());
                 cmd.Parameters.AddWithValue("@Training_Name", textBox_training_name.Text);
                 cmd.Parameters.AddWithValue("@Area_Tematica", textBox_area_tematica.Text);
                 cmd.Parameters.AddWithValue("@JobCode", textBox_JobCode.Text);
@@ -84,7 +88,7 @@ namespace DataGrid_Cursos
         {
             con.Open();
             DataTable dt = new DataTable();
-            SqlDataAdapter adapt = new SqlDataAdapter("select [ID], [ZONER NAME], [AREA],[AREA TEMATICA] from [dbo].[Capacitaciones_2022]", con);
+            SqlDataAdapter adapt = new SqlDataAdapter("select * from [dbo].[Capacitaciones_2022]", con);
             adapt.Fill(dt);
             dataGridView2.DataSource = dt;
             con.Close();
@@ -124,8 +128,8 @@ namespace DataGrid_Cursos
         public void clearData()
         {
             textBox_ZonerName.Text ="";
-            textBox_Area.Text = "";
-            textBox_Supervisor.Text = "";
+            comboBox_Area.SelectedIndex = -1;
+            comboBox_Supervisor.SelectedIndex = -1;
             textBox_training_name.Text = "";
             textBox_area_tematica.Text = "";
             textBox_JobCode.Text = "";
@@ -149,5 +153,52 @@ namespace DataGrid_Cursos
         {
             PopulateData();
         }
+
+       public void BindData()
+        {
+            con.Open();
+            SqlCommand cmd =  new SqlCommand("select distinct [AREA] from [dbo].[Capacitaciones_2022]", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                comboBox_Area.Items.Add(dr[0].ToString());
+                
+            }
+            dr.Close();
+            con.Close();
+        }
+
+        public void BindSupervisor()
+        {
+            con.Open();
+            SqlCommand command = new SqlCommand("select distinct [SUPERVISOR] from [dbo].[Capacitaciones_2022]", con);
+            SqlDataReader dr = command.ExecuteReader();
+            while (dr.Read())
+            {
+                comboBox_Supervisor.Items.Add(dr[0].ToString());
+            }
+            dr.Close();
+            con.Close();
+        }
+        /*
+       public void Bins(string campos)
+        {
+            con.Open();
+            string cmd = "select distinct @campos from [dbo].[Capacitaciones_2022]";
+            SqlCommand command = new SqlCommand(cmd);
+            command.Parameters.AddWithValue("@campos", campos);
+            SqlDataReader dr = command.ExecuteReader();
+            string cb = "comboBox_";
+            ComboBox comboBox = new ComboBox(string.Concat(cb, campos));
+            while (dr.Read())
+            {
+               comboBox.Items.Add(dr[0].ToString());
+            }
+            dr.Close();
+            con.Close();
+
+        }
+         */
+        
     }
 }

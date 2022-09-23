@@ -41,19 +41,6 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox_Supervisor = new System.Windows.Forms.TextBox();
-            this.label_supervisor = new System.Windows.Forms.Label();
-            this.label_Area = new System.Windows.Forms.Label();
-            this.textBox_ZonerName = new System.Windows.Forms.TextBox();
-            this.textBox_Area = new System.Windows.Forms.TextBox();
-            this.label_ZonerName = new System.Windows.Forms.Label();
-            this.label_training_name = new System.Windows.Forms.Label();
-            this.label_area_tematica = new System.Windows.Forms.Label();
-            this.textBox_training_name = new System.Windows.Forms.TextBox();
-            this.textBox_area_tematica = new System.Windows.Forms.TextBox();
-            this.textBox_JobCode = new System.Windows.Forms.TextBox();
-            this.label_JobCode = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button_Exit = new System.Windows.Forms.Button();
             this.button_Refresh = new System.Windows.Forms.Button();
@@ -91,14 +78,30 @@
             this.Area_Tematica = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.JobCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.label_Cost = new System.Windows.Forms.Label();
+            this.label_Facilitator = new System.Windows.Forms.Label();
+            this.label_JobAZPeople = new System.Windows.Forms.Label();
+            this.label_supervisor = new System.Windows.Forms.Label();
+            this.label_Area = new System.Windows.Forms.Label();
+            this.label_JobCode = new System.Windows.Forms.Label();
+            this.textBox_JobCode = new System.Windows.Forms.TextBox();
+            this.textBox_area_tematica = new System.Windows.Forms.TextBox();
+            this.label_area_tematica = new System.Windows.Forms.Label();
+            this.label_training_name = new System.Windows.Forms.Label();
+            this.label_ZonerName = new System.Windows.Forms.Label();
+            this.textBox_ZonerName = new System.Windows.Forms.TextBox();
+            this.comboBox_Area = new System.Windows.Forms.ComboBox();
+            this.comboBox_Supervisor = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox_Training_Name = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.capacitaciones2022BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.importarExcelORSDataSet)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // capacitaciones2022BindingSource
@@ -182,143 +185,6 @@
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
             this.editToolStripMenuItem1.Size = new System.Drawing.Size(102, 22);
             this.editToolStripMenuItem1.Text = "Edit";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox_Supervisor, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label_supervisor, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label_Area, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox_ZonerName, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox_Area, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label_ZonerName, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_training_name, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_area_tematica, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox_training_name, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox_area_tematica, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox_JobCode, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label_JobCode, 2, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(44, 41);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(725, 107);
-            this.tableLayoutPanel1.TabIndex = 4;
-            // 
-            // textBox_Supervisor
-            // 
-            this.textBox_Supervisor.Location = new System.Drawing.Point(205, 74);
-            this.textBox_Supervisor.Name = "textBox_Supervisor";
-            this.textBox_Supervisor.Size = new System.Drawing.Size(129, 20);
-            this.textBox_Supervisor.TabIndex = 14;
-            // 
-            // label_supervisor
-            // 
-            this.label_supervisor.AutoSize = true;
-            this.label_supervisor.BackColor = System.Drawing.SystemColors.Info;
-            this.label_supervisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_supervisor.Location = new System.Drawing.Point(3, 71);
-            this.label_supervisor.Name = "label_supervisor";
-            this.label_supervisor.Size = new System.Drawing.Size(100, 24);
-            this.label_supervisor.TabIndex = 9;
-            this.label_supervisor.Text = "Supervisor";
-            // 
-            // label_Area
-            // 
-            this.label_Area.AutoSize = true;
-            this.label_Area.BackColor = System.Drawing.SystemColors.Info;
-            this.label_Area.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Area.Location = new System.Drawing.Point(3, 32);
-            this.label_Area.Name = "label_Area";
-            this.label_Area.Size = new System.Drawing.Size(50, 24);
-            this.label_Area.TabIndex = 5;
-            this.label_Area.Text = "Area";
-            // 
-            // textBox_ZonerName
-            // 
-            this.textBox_ZonerName.Location = new System.Drawing.Point(205, 3);
-            this.textBox_ZonerName.Name = "textBox_ZonerName";
-            this.textBox_ZonerName.Size = new System.Drawing.Size(129, 20);
-            this.textBox_ZonerName.TabIndex = 4;
-            // 
-            // textBox_Area
-            // 
-            this.textBox_Area.Location = new System.Drawing.Point(205, 35);
-            this.textBox_Area.Name = "textBox_Area";
-            this.textBox_Area.Size = new System.Drawing.Size(129, 20);
-            this.textBox_Area.TabIndex = 6;
-            // 
-            // label_ZonerName
-            // 
-            this.label_ZonerName.AutoSize = true;
-            this.label_ZonerName.BackColor = System.Drawing.SystemColors.Info;
-            this.label_ZonerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ZonerName.Location = new System.Drawing.Point(3, 0);
-            this.label_ZonerName.Name = "label_ZonerName";
-            this.label_ZonerName.Size = new System.Drawing.Size(112, 24);
-            this.label_ZonerName.TabIndex = 4;
-            this.label_ZonerName.Text = "ZonerName";
-            // 
-            // label_training_name
-            // 
-            this.label_training_name.AutoSize = true;
-            this.label_training_name.BackColor = System.Drawing.SystemColors.Info;
-            this.label_training_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_training_name.Location = new System.Drawing.Point(407, 0);
-            this.label_training_name.Name = "label_training_name";
-            this.label_training_name.Size = new System.Drawing.Size(135, 24);
-            this.label_training_name.TabIndex = 7;
-            this.label_training_name.Text = "Training Name";
-            // 
-            // label_area_tematica
-            // 
-            this.label_area_tematica.AutoSize = true;
-            this.label_area_tematica.BackColor = System.Drawing.SystemColors.Info;
-            this.label_area_tematica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_area_tematica.Location = new System.Drawing.Point(407, 32);
-            this.label_area_tematica.Name = "label_area_tematica";
-            this.label_area_tematica.Size = new System.Drawing.Size(124, 24);
-            this.label_area_tematica.TabIndex = 8;
-            this.label_area_tematica.Text = "Area tematica";
-            // 
-            // textBox_training_name
-            // 
-            this.textBox_training_name.Location = new System.Drawing.Point(572, 3);
-            this.textBox_training_name.Name = "textBox_training_name";
-            this.textBox_training_name.Size = new System.Drawing.Size(129, 20);
-            this.textBox_training_name.TabIndex = 10;
-            // 
-            // textBox_area_tematica
-            // 
-            this.textBox_area_tematica.Location = new System.Drawing.Point(572, 35);
-            this.textBox_area_tematica.Name = "textBox_area_tematica";
-            this.textBox_area_tematica.Size = new System.Drawing.Size(129, 20);
-            this.textBox_area_tematica.TabIndex = 12;
-            // 
-            // textBox_JobCode
-            // 
-            this.textBox_JobCode.Location = new System.Drawing.Point(572, 74);
-            this.textBox_JobCode.Name = "textBox_JobCode";
-            this.textBox_JobCode.Size = new System.Drawing.Size(129, 20);
-            this.textBox_JobCode.TabIndex = 11;
-            // 
-            // label_JobCode
-            // 
-            this.label_JobCode.AutoSize = true;
-            this.label_JobCode.BackColor = System.Drawing.SystemColors.Info;
-            this.label_JobCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_JobCode.Location = new System.Drawing.Point(407, 71);
-            this.label_JobCode.Name = "label_JobCode";
-            this.label_JobCode.Size = new System.Drawing.Size(87, 24);
-            this.label_JobCode.TabIndex = 13;
-            this.label_JobCode.Text = "JobCode";
             // 
             // tableLayoutPanel2
             // 
@@ -571,10 +437,10 @@
             this.Training_Name,
             this.Area_Tematica,
             this.JobCode});
-            this.dataGridView2.Location = new System.Drawing.Point(12, 330);
+            this.dataGridView2.Location = new System.Drawing.Point(0, 331);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(641, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(995, 150);
             this.dataGridView2.TabIndex = 6;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
@@ -625,6 +491,184 @@
             this.dataGridView3.Size = new System.Drawing.Size(641, 150);
             this.dataGridView3.TabIndex = 7;
             // 
+            // label_Cost
+            // 
+            this.label_Cost.AutoSize = true;
+            this.label_Cost.BackColor = System.Drawing.SystemColors.Info;
+            this.label_Cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Cost.Location = new System.Drawing.Point(724, 71);
+            this.label_Cost.Name = "label_Cost";
+            this.label_Cost.Size = new System.Drawing.Size(47, 24);
+            this.label_Cost.TabIndex = 16;
+            this.label_Cost.Text = "Cost";
+            // 
+            // label_Facilitator
+            // 
+            this.label_Facilitator.AutoSize = true;
+            this.label_Facilitator.BackColor = System.Drawing.SystemColors.Info;
+            this.label_Facilitator.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Facilitator.Location = new System.Drawing.Point(724, 32);
+            this.label_Facilitator.Name = "label_Facilitator";
+            this.label_Facilitator.Size = new System.Drawing.Size(89, 24);
+            this.label_Facilitator.TabIndex = 15;
+            this.label_Facilitator.Text = "Facilitator";
+            // 
+            // label_JobAZPeople
+            // 
+            this.label_JobAZPeople.AutoSize = true;
+            this.label_JobAZPeople.BackColor = System.Drawing.SystemColors.Info;
+            this.label_JobAZPeople.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_JobAZPeople.Location = new System.Drawing.Point(724, 0);
+            this.label_JobAZPeople.Name = "label_JobAZPeople";
+            this.label_JobAZPeople.Size = new System.Drawing.Size(126, 24);
+            this.label_JobAZPeople.TabIndex = 14;
+            this.label_JobAZPeople.Text = "JobAZPeople";
+            // 
+            // label_supervisor
+            // 
+            this.label_supervisor.AutoSize = true;
+            this.label_supervisor.BackColor = System.Drawing.SystemColors.Info;
+            this.label_supervisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_supervisor.Location = new System.Drawing.Point(3, 71);
+            this.label_supervisor.Name = "label_supervisor";
+            this.label_supervisor.Size = new System.Drawing.Size(100, 24);
+            this.label_supervisor.TabIndex = 9;
+            this.label_supervisor.Text = "Supervisor";
+            // 
+            // label_Area
+            // 
+            this.label_Area.AutoSize = true;
+            this.label_Area.BackColor = System.Drawing.SystemColors.Info;
+            this.label_Area.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Area.Location = new System.Drawing.Point(3, 32);
+            this.label_Area.Name = "label_Area";
+            this.label_Area.Size = new System.Drawing.Size(50, 24);
+            this.label_Area.TabIndex = 5;
+            this.label_Area.Text = "Area";
+            // 
+            // label_JobCode
+            // 
+            this.label_JobCode.AutoSize = true;
+            this.label_JobCode.BackColor = System.Drawing.SystemColors.Info;
+            this.label_JobCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_JobCode.Location = new System.Drawing.Point(356, 71);
+            this.label_JobCode.Name = "label_JobCode";
+            this.label_JobCode.Size = new System.Drawing.Size(87, 24);
+            this.label_JobCode.TabIndex = 13;
+            this.label_JobCode.Text = "JobCode";
+            // 
+            // textBox_JobCode
+            // 
+            this.textBox_JobCode.Location = new System.Drawing.Point(526, 74);
+            this.textBox_JobCode.Name = "textBox_JobCode";
+            this.textBox_JobCode.Size = new System.Drawing.Size(153, 20);
+            this.textBox_JobCode.TabIndex = 11;
+            // 
+            // textBox_area_tematica
+            // 
+            this.textBox_area_tematica.Location = new System.Drawing.Point(526, 35);
+            this.textBox_area_tematica.Name = "textBox_area_tematica";
+            this.textBox_area_tematica.Size = new System.Drawing.Size(150, 20);
+            this.textBox_area_tematica.TabIndex = 12;
+            // 
+            // label_area_tematica
+            // 
+            this.label_area_tematica.AutoSize = true;
+            this.label_area_tematica.BackColor = System.Drawing.SystemColors.Info;
+            this.label_area_tematica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_area_tematica.Location = new System.Drawing.Point(356, 32);
+            this.label_area_tematica.Name = "label_area_tematica";
+            this.label_area_tematica.Size = new System.Drawing.Size(124, 24);
+            this.label_area_tematica.TabIndex = 8;
+            this.label_area_tematica.Text = "Area tematica";
+            // 
+            // label_training_name
+            // 
+            this.label_training_name.AutoSize = true;
+            this.label_training_name.BackColor = System.Drawing.SystemColors.Info;
+            this.label_training_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_training_name.Location = new System.Drawing.Point(356, 0);
+            this.label_training_name.Name = "label_training_name";
+            this.label_training_name.Size = new System.Drawing.Size(135, 24);
+            this.label_training_name.TabIndex = 7;
+            this.label_training_name.Text = "Training Name";
+            // 
+            // label_ZonerName
+            // 
+            this.label_ZonerName.AutoSize = true;
+            this.label_ZonerName.BackColor = System.Drawing.SystemColors.Info;
+            this.label_ZonerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ZonerName.Location = new System.Drawing.Point(3, 0);
+            this.label_ZonerName.Name = "label_ZonerName";
+            this.label_ZonerName.Size = new System.Drawing.Size(112, 24);
+            this.label_ZonerName.TabIndex = 4;
+            this.label_ZonerName.Text = "ZonerName";
+            // 
+            // textBox_ZonerName
+            // 
+            this.textBox_ZonerName.Location = new System.Drawing.Point(127, 3);
+            this.textBox_ZonerName.Name = "textBox_ZonerName";
+            this.textBox_ZonerName.Size = new System.Drawing.Size(165, 20);
+            this.textBox_ZonerName.TabIndex = 4;
+            // 
+            // comboBox_Area
+            // 
+            this.comboBox_Area.FormattingEnabled = true;
+            this.comboBox_Area.Location = new System.Drawing.Point(127, 35);
+            this.comboBox_Area.Name = "comboBox_Area";
+            this.comboBox_Area.Size = new System.Drawing.Size(165, 21);
+            this.comboBox_Area.TabIndex = 8;
+            // 
+            // comboBox_Supervisor
+            // 
+            this.comboBox_Supervisor.FormattingEnabled = true;
+            this.comboBox_Supervisor.Location = new System.Drawing.Point(127, 74);
+            this.comboBox_Supervisor.Name = "comboBox_Supervisor";
+            this.comboBox_Supervisor.Size = new System.Drawing.Size(165, 21);
+            this.comboBox_Supervisor.TabIndex = 8;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 6;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.29412F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.70588F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
+            this.tableLayoutPanel1.Controls.Add(this.comboBox_Supervisor, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox_Area, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textBox_ZonerName, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label_ZonerName, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label_training_name, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label_area_tematica, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textBox_area_tematica, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textBox_JobCode, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label_JobCode, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label_Area, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label_supervisor, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label_JobAZPeople, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label_Facilitator, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label_Cost, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox_Training_Name, 3, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(44, 41);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1092, 107);
+            this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // comboBox_Training_Name
+            // 
+            this.comboBox_Training_Name.FormattingEnabled = true;
+            this.comboBox_Training_Name.Location = new System.Drawing.Point(526, 3);
+            this.comboBox_Training_Name.Name = "comboBox_Training_Name";
+            this.comboBox_Training_Name.Size = new System.Drawing.Size(153, 21);
+            this.comboBox_Training_Name.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -645,12 +689,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.importarExcelORSDataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -669,19 +713,6 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label_ZonerName;
-        private System.Windows.Forms.TextBox textBox_ZonerName;
-        private System.Windows.Forms.Label label_Area;
-        private System.Windows.Forms.TextBox textBox_Area;
-        private System.Windows.Forms.Label label_supervisor;
-        private System.Windows.Forms.Label label_training_name;
-        private System.Windows.Forms.Label label_area_tematica;
-        private System.Windows.Forms.TextBox textBox_JobCode;
-        private System.Windows.Forms.TextBox textBox_training_name;
-        private System.Windows.Forms.TextBox textBox_area_tematica;
-        private System.Windows.Forms.Label label_JobCode;
-        private System.Windows.Forms.TextBox textBox_Supervisor;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button button_Exit;
         private System.Windows.Forms.Button button_Refresh;
@@ -719,6 +750,22 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cOSTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn taxDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label_Cost;
+        private System.Windows.Forms.Label label_Facilitator;
+        private System.Windows.Forms.Label label_JobAZPeople;
+        private System.Windows.Forms.Label label_supervisor;
+        private System.Windows.Forms.Label label_Area;
+        private System.Windows.Forms.Label label_JobCode;
+        private System.Windows.Forms.TextBox textBox_JobCode;
+        private System.Windows.Forms.TextBox textBox_area_tematica;
+        private System.Windows.Forms.Label label_area_tematica;
+        private System.Windows.Forms.Label label_training_name;
+        private System.Windows.Forms.Label label_ZonerName;
+        private System.Windows.Forms.TextBox textBox_ZonerName;
+        private System.Windows.Forms.ComboBox comboBox_Area;
+        private System.Windows.Forms.ComboBox comboBox_Supervisor;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ComboBox comboBox_Training_Name;
     }
 }
 
